@@ -17,14 +17,14 @@ public class camera_controller : MonoBehaviour
         if (Input.GetKey(KeyCode.R))
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         if (Input.GetKey(KeyCode.F)) {
-            // enable  flying
+            // enable flying
             transform.Find("fps_component").gameObject.SetActive(true);
             transform.Find("movement_component").gameObject.SetActive(true);
             // disable orbit
             transform.Find("orbit_component").gameObject.SetActive(false);
         }
         else if (Input.GetKey(KeyCode.O)) {
-            // enable  orbit
+            // enable orbit
             transform.Find("orbit_component").gameObject.SetActive(true);
             // disable flying
             transform.Find("fps_component").gameObject.SetActive(false);
