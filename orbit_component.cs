@@ -12,8 +12,7 @@ public class orbit_component : MonoBehaviour
     public float min_angle = 0f;
     public float scroll_sensitivity = 2000;
 
-    void Start()
-    {
+    void Start() {
         mouse_sensitivity = 1200;
         max_angle = 60f;
         min_angle = 0f;
@@ -24,8 +23,7 @@ public class orbit_component : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
+    void Update() {
         float orbit_spin_amount = Input.GetAxis("Mouse X");
         float orbit_height_amount = Input.GetAxis("Mouse Y");
         camera.transform.RotateAround(Vector3.zero, Vector3.up, orbit_spin_amount * mouse_sensitivity * Time.deltaTime);

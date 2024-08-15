@@ -17,8 +17,7 @@ public class fps_component : MonoBehaviour
         return true;
     }
 
-    void Start()
-    {
+    void Start() {
         mouse_sensitivity = 1200;
         scroll_sensitivity = 2000;
 
@@ -27,8 +26,7 @@ public class fps_component : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
+    void Update() {
         float spin_amount = Input.GetAxis("Mouse X");
         float pitch_amount = Input.GetAxis("Mouse Y");
         camera.transform.RotateAround(camera.transform.position, Vector3.up, spin_amount * mouse_sensitivity * Time.deltaTime);
