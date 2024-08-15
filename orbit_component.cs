@@ -7,16 +7,16 @@ using UnityEngine;
 public class orbit_component : MonoBehaviour
 {
     public new Camera camera;
-    public float mouse_sensitivity = 1200;
-    public float max_angle = 60f;
+    public float mouse_sensitivity = 200;
+    public float max_angle = 70f;
     public float min_angle = 0f;
-    public float scroll_sensitivity = 2000;
+    public float scroll_sensitivity = 200;
 
     void Start() {
-        mouse_sensitivity = 1200;
-        max_angle = 60f;
+        mouse_sensitivity = 200;
+        max_angle = 70f;
         min_angle = 0f;
-        scroll_sensitivity = 2000;
+        scroll_sensitivity = 200;
 
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;

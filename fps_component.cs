@@ -7,19 +7,19 @@ using UnityEngine;
 public class fps_component : MonoBehaviour
 {
     public new Camera camera;
-    public float mouse_sensitivity = 1200;
-    public float scroll_sensitivity = 2000;
+    public float mouse_sensitivity = 200;
+    public float scroll_sensitivity = 200;
 
     private bool AngleIsValid(float angle) {
-        // angle is between 280 and 360, and 0 and 60
-        if (angle > 60 && angle < 280)
+        // angle is between 280 and 360, and 0 and 70
+        if (angle > 70 && angle < 280)
             return false;
         return true;
     }
 
     void Start() {
-        mouse_sensitivity = 1200;
-        scroll_sensitivity = 2000;
+        mouse_sensitivity = 200;
+        scroll_sensitivity = 200;
 
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
