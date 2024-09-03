@@ -17,9 +17,6 @@ public class orbit_component : MonoBehaviour
         max_angle = 70f;
         min_angle = 0f;
         scroll_sensitivity = 200;
-
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame

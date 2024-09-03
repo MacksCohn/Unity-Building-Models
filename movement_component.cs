@@ -15,7 +15,7 @@ public class movement_component : MonoBehaviour
     void Update() {
         Vector3 to_move = new Vector3(
             Input.GetAxis("Horizontal"),
-            (Input.GetKey(KeyCode.Space) ? 1:0) - (Input.GetKey(KeyCode.LeftControl) ? 1:0),
+            (Input.GetKey(KeyCode.Space) ? 1:0) - (Input.GetKey(KeyCode.LeftShift) ? 1:0),
             Input.GetAxis("Vertical"));
         to_move *= move_speed;
         camera.transform.Translate(to_move * Time.deltaTime);

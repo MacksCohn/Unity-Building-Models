@@ -20,9 +20,6 @@ public class fps_component : MonoBehaviour
     void Start() {
         mouse_sensitivity = 200;
         scroll_sensitivity = 200;
-
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame
